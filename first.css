@@ -1,0 +1,146 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap');
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    
+    body{
+        background-color: rgb(5, 6, 24);
+        font-size: 4em;
+        color: white;
+        .parallax_wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 300px;
+        }
+        .intro_screen{
+        height: 100vh;
+        background-color: rgb(13, 161, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .outro_screen{
+        height: 100vh;
+        background-color: teal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .parallax_group{
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+        }
+        .parallax_layer{
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    
+        .base_layer{
+        /* scale calculation: 1 + ((z transform value * -1) / perspective) */
+        transform: translateZ(-300px) scale(2);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        }
+        .top_layer{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        }
+    
+        .mid_layer{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        transform: translateZ(0);
+        }
+        /* .mid_layer{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            transform: translateZ(2);
+        } */
+        .mid_layer2{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            transform: translateZ(100);
+        }
+        .top_layer{
+        transform: translateZ(150px) scale(0.5);
+        }
+    }
+    
+    #intro{
+        z-index: 0;
+    }
+    
+    #group_1{
+        z-index: -1;
+    }
+    #group_3{
+        z-index: 1;
+    }
+
+    #group_3 > .mid_layer{
+        background-color: aqua;
+    }
+    
+    #group_1 > .base_layer{
+        background-color: crimson;
+    }
+    
+    #group_2{
+    
+    }
+    
+    #group_2 > .mid_layer{
+        background-color: rgb(91, 236, 91);
+    }
+    
+    #outro{
+    
+    }
+
+    .project_text{
+        width: 50vw;
+        padding: 3%;
+
+    }
+    .project_description{
+        font-size: 3rem;
+        text-align: justify;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .project_heading h1{
+        font-size: 6rem;
+        font-weight: 700;
+        font-family: 'Bebas Neue', sans-serif;
+
+    }
+
+    .img-right{
+        background: url('./IEI_MOCKUP.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 50vw;
+    }
+    .img-left{
+        background: url('./Music_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 10vw;
+    }
+
+    .img-right2{
+        background: url('./pizzaBay_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 50vw;
+    }
+
