@@ -124,23 +124,155 @@
         font-size: 3rem;
         text-align: justify;
         font-family: 'Bebas Neue', sans-serif;
+        line-height: 3rem;
     }
 
     .project_heading h1{
         font-size: 6rem;
         font-weight: 700;
         font-family: 'Bebas Neue', sans-serif;
-
+        color: rgb(37, 36, 36);
     }
 
     .img-right{
         background: url('./IEI_MOCKUP.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 50vw;
     }
     .img-left{
-        background: url('./Music_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 10vw;
+        background: url('./clusterize_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 12vw;
+    }
+    .img-left2{
+        background: url('./Music_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 11vw;
     }
 
     .img-right2{
         background: url('./pizzaBay_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 50vw;
     }
+    .img-right3{
+        background: url('./chirag_portfolio_mockup.png'); background-repeat: no-repeat; height: 100vh; width: 50vw; background-position: center; margin-left: 50vw;
+    }
 
+    .tech-stack{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        color: rgb(55, 55, 55);
+    }
+
+
+    .project_text_small{
+        width: 70vw;
+        padding: 4%;
+        overflow-x: hidden;
+
+    }
+    .project_description_small{
+        font-size: 3rem;
+        /* text-align: justify; */
+        font-family: 'Bebas Neue', sans-serif;
+        line-height: 3rem;
+    }
+
+    .project_heading_small h1{
+        font-size: 6rem;
+        font-weight: 700;
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(37, 36, 36);
+    }
+
+      
+      .img_hidden1{
+        background: url('./IEI_MOCKUP.png'); background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+    }
+    .img_hidden2{
+        background: url('./clusterize_mockup.png'); background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+    }
+    .img_hidden3{
+        background: url('./pizzaBay_mockup.png'); background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+    }
+
+    .img_hidden4{
+        background: url('./Music_mockup.png'); background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+    }
+
+    .img_hidden5{
+        background: url('./chirag_portfolio_mockup.png'); background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+    }
+
+    @media (min-width: 1377px){
+        .wrapper_small{
+            display: none;
+        }
+        .parallax_wrapper{
+            display: block;
+        }
+    }
+
+    @media (max-width: 1376px){
+        .wrapper_small{
+            display: block;
+            overflow-x: hidden;
+        }
+        .parallax_wrapper{
+            display: none;
+        }
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 80%;
+        }
+    }
+    @media (max-width: 1100px){
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            background-repeat: no-repeat; height: 44vh; width: 44vw; background-position: center; background-size: 100%;
+        }
+    }
+    @media (max-width: 900px){
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            background-repeat: no-repeat; height: 60vh; width: 60vw; background-position: center; background-size: 100%;
+        }
+    }
+    @media (max-width: 650px){
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            background-repeat: no-repeat; height: 70vh; width: 70vw; background-position: center; background-size: 100%;
+        }
+    }
+
+    @media (max-width: 542px){
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            margin-top: -20vh;
+        }
+        .project_description_small{
+            margin-top: -20vh;
+        }
+    }
+    @media (max-width: 500px){
+        .img_hidden1, .img_hidden2, .img_hidden3, .img_hidden4, .img_hidden5{
+            background-repeat: no-repeat; height: 70vh; width: 70vw; background-position: center; background-size: 100%;
+        }
+        .project_heading_small h1{
+            font-size: 4.5rem;
+        }
+    }
+
+    #demo{
+        padding: 10px; background-color: black; color: white; width: 6rem; border-radius: 0.2rem;transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    #demo:hover{
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+    }
+
+    #code{
+        padding: 10px; background-color: transparent; border: 2px solid black; color: black; width: 8rem; border-radius: 0.2rem;transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    #code:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+        cursor: pointer;
+    }
+
+    #disabled{
+        padding: 10px; background-color: transparent; border: 2px solid black; color: black; width: 8rem; border-radius: 0.2rem;
+        cursor: not-allowed;
+    }
