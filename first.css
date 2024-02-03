@@ -17,6 +17,20 @@
 }
     }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00c6ff;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(181, 63, 185);
+  border-radius: 6px;
+}
+
 
     body{
         background-color: rgb(5, 6, 24);
